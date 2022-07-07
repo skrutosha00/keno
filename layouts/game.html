@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, width=device-width, viewport-fit=cover"
+    />
+    <link rel="shortcut icon" href="../png/icon.png" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/game.css" />
+    <title>Keno Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="../png/back_tl.png" alt="back" class="back tl" />
+      <img src="../png/back_tr.png" alt="back" class="back tr" />
+      <img src="../png/back_br.png" alt="back" class="back br" />
+
+      <div class="warning">
+        <div class="outcome"></div>
+        <div class="reward block">0</div>
+        <div class="again button block">ok</div>
+      </div>
+
+      <a href="./main.html" class="home block">menu</a>
+      <div class="balance_field block"></div>
+
+      <div class="bet_amount_cont block">
+        <span>Bet:</span>
+        <span class="bet_amount">0</span>
+      </div>
+
+      <div class="numbers_cont">
+        <div class="numbers_header">numbers</div>
+        <div class="numbers"></div>
+      </div>
+
+      <div class="play block">
+        <img src="../png/spin.png" alt="spin" />
+      </div>
+
+      <div class="random block">
+        <img src="../png/random.png" alt="random" />
+      </div>
+
+      <div class="field"></div>
+
+      <div class="reward_info">
+        <div class="reward_header">
+          <span class="line_hit">hit</span>
+          <span class="line_win">win</span>
+        </div>
+      </div>
+
+      <div class="indicator_cont"></div>
+      <div class="clear block">clear</div>
+    </div>
+    <script src="../scripts/game.js" type="module"></script>
+  </body>
+</html>

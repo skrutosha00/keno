@@ -1,0 +1,41 @@
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+
+  max-width: 40%;
+}
+
+.button {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+
+  width: 20%;
+  height: 20%;
+  max-height: 100px;
+}
+
+.balance_field {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+}
+
+.volume_cont {
+  left: 2%;
+  top: 5%;
+}
+
+@media screen and (min-height: 600px) {
+  .volume_cont {
+    transform: scale(1.5);
+  }
+
+  .balance_field {
+    transform: translateX(-50%) scale(1.5);
+  }
+}
