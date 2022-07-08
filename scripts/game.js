@@ -101,6 +101,9 @@ document.querySelector('.play').onclick = () => {
     for (let i = 0; i < winList.length; i++) {
         let number = document.querySelectorAll('.number')[i]
 
+        if (chosen.includes(winList[i])) {
+            number.classList.add('win')
+        }
         number.innerHTML = winList[i]
         number.classList.remove('hidden')
 
@@ -124,6 +127,7 @@ document.querySelector('.again').onclick = () => {
     warning.style.left = '-50%'
 
     for (let number of document.querySelectorAll('.number')) {
+        number.classList.remove('win')
         number.classList.add('hidden')
         number.innerHTML = ''
     }

@@ -151,7 +151,16 @@
   width: 25px;
   height: 25px;
 
+  border-radius: 50%;
   transition: opacity 0.5s ease;
+}
+
+.number.win {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ff61e6 0%,
+    rgba(162, 3, 136, 0.5) 100%
+  );
 }
 
 .play {
